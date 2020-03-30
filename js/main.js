@@ -1,5 +1,5 @@
 function drawCoordinates(x,y){
-    var pointSize = 3; // Change according to the size of the point.
+    var pointSize = 6; // Change according to the size of the point.
     var ctx = document.getElementById("pitch").getContext("2d");
 
 
