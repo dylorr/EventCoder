@@ -18,7 +18,6 @@ function addevent(event) {
     let x = ((event.clientX - rect.left)/document.getElementById('pitch').offsetWidth); //x position within the element.
     let y = ((event.clientY - rect.top)/document.getElementById('pitch').offsetHeight);  //y position within the element.
     
-    drawCoordinates(x,y);
 
       
     // let coords2 = "W = " + x + " Y = " + y;
@@ -145,6 +144,7 @@ function addevent(event) {
             return false;
         }
     }, false);
-    
+drawCoordinates(x,y);
+
 }
   //# sourceURL=userscript.js
