@@ -1,6 +1,6 @@
 function drawCoordinates(x,y){
     var pointSize = 3; // Change according to the size of the point.
-    var ctx = document.getElementById("pitch").getContext("2d");
+    var ctx = document.getElementById("pitchcontainer").getContext("2d");
 
 
     ctx.fillStyle = "#ff2626"; // Red color
