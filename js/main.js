@@ -39,7 +39,7 @@ function addevent(event) {
   }
 
 function drawCoordinates(x,y){	
-  	var ctx = document.getElementById("canvas").getContext("2d");
+  	var ctx = document.getElementById('pitch').getContext("2d");
 
 
   	ctx.fillStyle = "#ff2626"; // Red color
