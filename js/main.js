@@ -1,3 +1,6 @@
+$("#pitch").click(function(e){
+     addevent(e); 
+});
 
 
 function addevent(event) {
