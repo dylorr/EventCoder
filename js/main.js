@@ -7,6 +7,9 @@ function addevent(event) {
     let x = ((event.clientX - rect.left)/document.getElementById('pitch').offsetWidth); //x position within the element.
     let y = ((event.clientY - rect.top)/document.getElementById('pitch').offsetHeight);  //y position within the element.
     
+    drawCoordinates(x,y);
+  
+      
     // let coords2 = "W = " + x + " Y = " + y;
     
     let action = document.getElementById('selected').innerHTML;
@@ -34,6 +37,17 @@ function addevent(event) {
     document.getElementById("selected").removeAttribute('id');
     event.setAttribute("id", "selected");
   }
+
+function drawCoordinates(x,y){	
+  	var ctx = document.getElementById("canvas").getContext("2d");
+
+
+  	ctx.fillStyle = "#ff2626"; // Red color
+
+    ctx.beginPath();
+    ctx.arc(x, y, pointSize, 0, Math.PI * 2, true);
+    ctx.fill();
+}
   
   function eventsEditable(){
     events = document.getElementsByClassName("event");
