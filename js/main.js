@@ -6,12 +6,13 @@ function addevent(event) {
     if (document.getElementsByClassName("event")[0].getAttribute("contenteditable") == "false") {
     let rect = event.target.getBoundingClientRect() //get pitch dimensions
     
-    let x = ((event.clientX - rect.left)/document.getElementById('pitch').offsetWidth); //x position within the element.
-    let y = ((event.clientY - rect.top)/document.getElementById('pitch').offsetHeight);  //y position within the element.
+    var x = ((event.clientX - rect.left)/document.getElementById('pitch').offsetWidth); //x position within the element.
+    var y = ((event.clientY - rect.top)/document.getElementById('pitch').offsetHeight);  //y position within the element.
     
     let xplot = event.clientX - rect.left;
     let yplot = event.clientY - rect.top;
       
+    drawCoordinates(x,y);
 
       
     // let coords2 = "W = " + x + " Y = " + y;
