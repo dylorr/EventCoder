@@ -12,7 +12,7 @@ function addevent(event) {
     let xplot = event.clientX - rect.left;
     let yplot = event.clientY - rect.top;
       
-    drawCoordinates(x,y);
+    drawCoordinates(x+50,y+50);
 
       
     // let coords2 = "W = " + x + " Y = " + y;
