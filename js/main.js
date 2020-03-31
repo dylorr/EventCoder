@@ -27,8 +27,8 @@ function addevent(event) {
     let cell2 = row.insertCell(1);
     let cell3 = row.insertCell(2);
     cell1.innerHTML = action;
-    cell2.innerHTML = Math.round(x*100);
-    cell3.innerHTML = Math.round(y*100);
+    cell2.innerHTML = Math.round(x*50);
+    cell3.innerHTML = Math.round(y*94);
     
     document.getElementById("resultscontainer").scrollTop = document.getElementById("resultscontainer").scrollHeight; 
     
