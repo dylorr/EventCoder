@@ -146,6 +146,7 @@ function addevent(event) {
 }
 
 function drawX(x, y) {
+    var ctx = document.getElementById("pitch").getContext("2d");
     ctx.beginPath();
 
     ctx.moveTo(x - 10, y - 10);
