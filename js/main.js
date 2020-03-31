@@ -147,13 +147,15 @@ function addevent(event) {
 
 function drawX(x, y) {
     var ctx = document.getElementById("pitch").getContext("2d");
+    ctx.strokeStyle = "red";
+
     ctx.beginPath();
 
-    ctx.moveTo(x - 10, y - 10);
-    ctx.lineTo(x + 10, y + 10);
+    ctx.moveTo(x - 2.5, y - 2.5);
+    ctx.lineTo(x + 2.5, y + 2.5);
 
-    ctx.moveTo(x + 10, y - 10);
-    ctx.lineTo(x - 10, y + 10);
+    ctx.moveTo(x + 2.5, y - 2.5);
+    ctx.lineTo(x - 2.5, y + 2.5);
     ctx.stroke();
 }
 
@@ -166,7 +168,7 @@ function drawCoordinates(x,y){
     var pointSize = 2; // Change according to the size of the point.
     
 
-    ctx.fillStyle = "#E87722"; // vt orange color
+    ctx.fillStyle = "#66ff00"; // vt orange color
 
     ctx.beginPath(); //Start path
     ctx.arc(x, y, pointSize, 0, Math.PI * 2, true); // Draw a point using the arc function of the canvas with a point structure.
