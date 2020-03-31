@@ -171,7 +171,8 @@ function drawCoordinates(x,y){
     ctx.fillStyle = "#66ff00"; // vt orange color
 
     ctx.beginPath(); //Start path
-    ctx.arc(x, y, pointSize, 0, Math.PI * 2, true); // Draw a point using the arc function of the canvas with a point structure.
+    //ctx.arc(x, y, pointSize, 0, Math.PI * 2, true); // Draw a point using the arc function of the canvas with a point structure.
+    ctx.ellipse(x+1, y, 3, 1, 0, 0, 2 * Math.PI);
     ctx.fill(); // Close the path and fill.
 }
 }
