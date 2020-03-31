@@ -1,18 +1,3 @@
-$("#pitch").click(function(e){
-     getPosition(e); 
-});
-
-var pointSize = 3;
-
-function getPosition(event){
-     var rect = pitch.getBoundingClientRect();
-     var x = event.clientX - rect.left;
-     var y = event.clientY - rect.top;
-        
-     drawCoordinates(x,y);
-}
-
-
 
 
 function addevent(event) {
@@ -24,10 +9,10 @@ function addevent(event) {
     var x = ((event.clientX - rect.left)/document.getElementById('pitch').offsetWidth); //x position within the element.
     var y = ((event.clientY - rect.top)/document.getElementById('pitch').offsetHeight);  //y position within the element.
     
-    #let xplot = event.clientX - rect.left;
-    #let yplot = event.clientY - rect.top;
+    var xplot = event.clientX - rect.left;
+    var yplot = event.clientY - rect.top;
       
-   # drawCoordinates(xplot,yplot);
+    drawCoordinates(xplot,yplot);
 
       
     // let coords2 = "W = " + x + " Y = " + y;
