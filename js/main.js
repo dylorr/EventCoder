@@ -15,7 +15,7 @@ function addevent(event) {
     var xplot = event.pageX - rect2.left;
     var yplot = event.pageY - rect2.top;
       
-    drawCoordinates(x*document.getElementById('pitch').offsetWidth),y*document.getElementById('pitch').offsetHeight));
+    drawCoordinates(x*document.getElementById('pitch').offsetWidth,y*document.getElementById('pitch').offsetHeight);
 
       
     // let coords2 = "W = " + x + " Y = " + y;
