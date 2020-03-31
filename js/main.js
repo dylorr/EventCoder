@@ -9,10 +9,13 @@ function addevent(event) {
     var x = ((event.clientX - rect.left)/document.getElementById('pitch').offsetWidth); //x position within the element.
     var y = ((event.clientY - rect.top)/document.getElementById('pitch').offsetHeight);  //y position within the element.
     
-    var xplot = event.pageX - rect.left;
-    var yplot = event.pageY - rect.top;
       
-    drawCoordinates(xplot,y);
+    var rect2 = document.getElementById('pitch').getBoundingClientRect() //get pitch dimensions
+  
+    var xplot = event.pageX - rect2.left;
+    var yplot = event.pageY - rect2.top;
+      
+    drawCoordinates(xplot,yplot);
 
       
     // let coords2 = "W = " + x + " Y = " + y;
