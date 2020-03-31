@@ -4,15 +4,15 @@ function addevent(event) {
   
 
     if (document.getElementsByClassName("event")[0].getAttribute("contenteditable") == "false") {
-    var rect = pitch.getBoundingClientRect() //get pitch dimensions
+    var rect = event.target.getBoundingClientRect() //get pitch dimensions
     
     var x = ((event.clientX - rect.left)/document.getElementById('pitch').offsetWidth); //x position within the element.
     var y = ((event.clientY - rect.top)/document.getElementById('pitch').offsetHeight);  //y position within the element.
     
     var xplot = event.clientX - rect.left;
-    var yplot = event.clientY*50;
+    var yplot = event.clientY - rect.top;
       
-    drawCoordinates(xplot,y);
+    drawCoordinates(xplot,yplot);
 
       
     // let coords2 = "W = " + x + " Y = " + y;
