@@ -10,7 +10,7 @@ function addevent(event) {
     var y = ((event.clientY - rect.top)/document.getElementById('pitch').offsetHeight);  //y position within the element.
     
     var xplot = event.clientX - rect.left;
-    var yplot = event.clientY - rect.bottom;
+    var yplot = event.clientY + rect.top;
       
     drawCoordinates(xplot,y);
 
