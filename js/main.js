@@ -145,10 +145,21 @@ function addevent(event) {
 
 }
 
+function drawX(x, y) {
+    ctx.beginPath();
+
+    ctx.moveTo(x - 10, y - 10);
+    ctx.lineTo(x + 10, y + 10);
+
+    ctx.moveTo(x + 10, y - 10);
+    ctx.lineTo(x - 10, y + 10);
+    ctx.stroke();
+}
+
 function drawCoordinates(x,y){
     var pointSize = 2; // Change according to the size of the point.
     var ctx = document.getElementById("pitch").getContext("2d");
-
+    
 
     ctx.fillStyle = "#E87722"; // vt orange color
 
