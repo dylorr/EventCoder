@@ -165,10 +165,10 @@ textarea {
     z-index: 100;
     background-size: 100% 20vmin;
     border:solid 3px #979797;
-    height:87.2%;
+    height:92.5%;
     position:absolute;
-    left: 15%;
-    width:67%;
+    left: 5%;
+    width:90%;
     margin: 5% auto;
   }
   
