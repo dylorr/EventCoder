@@ -151,11 +151,11 @@ function drawX(x, y) {
 
     ctx.beginPath();
 
-    ctx.moveTo(x - 1.5, y - 1.5);
-    ctx.lineTo(x + 1.5, y + 1.5);
+    ctx.moveTo(x - 2.5, y - 1.5);
+    ctx.lineTo(x + 2.5, y + 1.5);
 
-    ctx.moveTo(x + 1.5, y - 1.5);
-    ctx.lineTo(x - 1.5, y + 1.5);
+    ctx.moveTo(x + 2.5, y - 1.5);
+    ctx.lineTo(x - 2.5, y + 1.5);
     ctx.stroke();
 }
 
