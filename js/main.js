@@ -147,7 +147,7 @@ function drawCoordinates(x,y){
     var ctx = document.getElementById("pitch").getContext("2d");
 
 
-    ctx.fillStyle = "#ff2626"; // Red color
+    ctx.fillStyle = "#E87722"; // vt orange color
 
     ctx.beginPath(); //Start path
     ctx.arc(x, y, pointSize, 0, Math.PI * 2, true); // Draw a point using the arc function of the canvas with a point structure.
