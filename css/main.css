@@ -141,8 +141,8 @@ textarea {
     margin: 0 auto;
     padding: 0.5% 0 0.5% 0;
     border: 0;
-    background: rgb(176,255,138);
-    background: linear-gradient(45deg, rgba(176,255,138,1) 0%, rgba(254,207,246,1) 100%);
+    #background: rgb(176,255,138);
+    #background: linear-gradient(45deg, rgba(176,255,138,1) 0%, rgba(254,207,246,1) 100%);
     position: relative;
     
     -webkit-box-shadow: 4px 2px 8px -1px rgba(115,115,115,1);
