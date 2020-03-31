@@ -4,7 +4,7 @@ function addevent(event) {
   
 
     if (document.getElementsByClassName("event")[0].getAttribute("contenteditable") == "false") {
-    let rect = event.target.getBoundingClientRect() //get pitch dimensions
+    let rect = pitch.getBoundingClientRect() //get pitch dimensions
     
     var x = ((event.clientX - rect.left)/document.getElementById('pitch').offsetWidth); //x position within the element.
     var y = ((event.clientY - rect.top)/document.getElementById('pitch').offsetHeight);  //y position within the element.
