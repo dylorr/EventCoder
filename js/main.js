@@ -9,8 +9,8 @@ function addevent(event) {
     var x = ((event.clientX - rect.left)/document.getElementById('pitch').offsetWidth); //x position within the element.
     var y = ((event.clientY - rect.top)/document.getElementById('pitch').offsetHeight);  //y position within the element.
     
-    var xplot = event.pageX - this.offsetLeft;
-    var yplot = event.pageY - this.offsetTop;
+    var xplot = event.pageX - $(this).offset().left;
+    var yplot = event.pageY - $(this).offset().top;
       
     drawCoordinates(xplot,yplot);
 
