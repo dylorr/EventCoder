@@ -157,6 +157,10 @@ function drawX(x, y) {
 }
 
 function drawCoordinates(x,y){
+  status = document.getElementById("selected").innerHTML
+  if (status.includes("Miss"){
+      drawX(x, y)
+}else {
     var pointSize = 2; // Change according to the size of the point.
     var ctx = document.getElementById("pitch").getContext("2d");
     
@@ -167,4 +171,6 @@ function drawCoordinates(x,y){
     ctx.arc(x, y, pointSize, 0, Math.PI * 2, true); // Draw a point using the arc function of the canvas with a point structure.
     ctx.fill(); // Close the path and fill.
 }
+}
+  
   //# sourceURL=userscript.js
