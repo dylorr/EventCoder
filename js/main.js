@@ -157,12 +157,12 @@ function drawX(x, y) {
 }
 
 function drawCoordinates(x,y){
+  var ctx = document.getElementById("pitch").getContext("2d");
   var status = document.getElementById("selected").innerHTML;
   if (status.includes("Miss")){
       drawX(x, y);
 }else {
     var pointSize = 2; // Change according to the size of the point.
-    var ctx = document.getElementById("pitch").getContext("2d");
     
 
     ctx.fillStyle = "#E87722"; // vt orange color
