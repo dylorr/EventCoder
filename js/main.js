@@ -1,18 +1,33 @@
+$("#pitch").click(function(e){
+     getPosition(e); 
+});
+
+var pointSize = 3;
+
+function getPosition(event){
+     var rect = pitch.getBoundingClientRect();
+     var x = event.clientX - rect.left;
+     var y = event.clientY - rect.top;
+        
+     drawCoordinates(x,y);
+}
+
+
 
 
 function addevent(event) {
   
 
     if (document.getElementsByClassName("event")[0].getAttribute("contenteditable") == "false") {
-    let rect = pitch.getBoundingClientRect() //get pitch dimensions
+    var rect = pitch.getBoundingClientRect() //get pitch dimensions
     
     var x = ((event.clientX - rect.left)/document.getElementById('pitch').offsetWidth); //x position within the element.
     var y = ((event.clientY - rect.top)/document.getElementById('pitch').offsetHeight);  //y position within the element.
     
-    let xplot = event.clientX - rect.left;
-    let yplot = event.clientY - rect.top;
+    #let xplot = event.clientX - rect.left;
+    #let yplot = event.clientY - rect.top;
       
-    drawCoordinates(xplot,y);
+   # drawCoordinates(xplot,yplot);
 
       
     // let coords2 = "W = " + x + " Y = " + y;
