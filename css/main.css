@@ -136,8 +136,8 @@ textarea {
   }
   
   #pitchcontainer{
-    width: 67%;
-    height: 60%;
+    width: 85%;
+    height: 75%;
     margin: 0 auto;
     padding: 0.5% 0 0.5% 0;
     border: 0;
@@ -148,17 +148,6 @@ textarea {
     -webkit-box-shadow: 4px 2px 8px -1px rgba(115,115,115,1);
     -moz-box-shadow: 4px 2px 8px -1px rgba(115,115,115,1);
     box-shadow: 4px 2px 8px -1px rgba(115,115,115,1);
-  }
-  
-  #linecontainer{
-    z-index: 99;
-    background-size: 100% 20vmin;
-    border:solid 3px #979797;
-    height:90%;
-    position:absolute;
-    left: 5%;
-    width:90%;
-    margin: 5% auto;
   }
   
   #pitch{
