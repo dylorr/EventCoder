@@ -12,7 +12,7 @@ function addevent(event) {
     let xplot = event.clientX - rect.left;
     let yplot = event.clientY - rect.top;
       
-    drawCoordinates(xplot,yplot);
+    drawCoordinates(xplot,y);
 
       
     // let coords2 = "W = " + x + " Y = " + y;
@@ -143,7 +143,7 @@ function addevent(event) {
 }
 
 function drawCoordinates(x,y){
-    var pointSize = 1; // Change according to the size of the point.
+    var pointSize = 3; // Change according to the size of the point.
     var ctx = document.getElementById("pitch").getContext("2d");
 
 
