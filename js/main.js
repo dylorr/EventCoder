@@ -21,7 +21,7 @@ function addevent(event) {
     // let coords2 = "W = " + x + " Y = " + y;
     
     let action = document.getElementById('selected').innerHTML;
-    let action2 = document.getElementById('selected2').innerHTML;
+   // let action2 = document.getElementById('selected2').innerHTML;
     
     // document.getElementById("demo").innerHTML = coords2 //test
     
