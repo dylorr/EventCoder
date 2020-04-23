@@ -45,8 +45,8 @@ function addevent(event) {
   }
   
   function changeEventFocus(event){
-    document.getElementById("selected").removeAttribute('id');
-    event.setAttribute("id", "selected");
+    document.getElementById("selected2").removeAttribute('id');
+    event.setAttribute("id", "selected2");
   }
   
   function eventsEditable(){
