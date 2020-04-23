@@ -108,7 +108,7 @@ textarea {
   }
   
   #maincontainer{
-    width: 400px;
+    width: 500px;
     max-width:95%;
     height: 98%;
     max-height: 800px;
@@ -138,6 +138,7 @@ textarea {
   #pitchcontainer{
     width: 85%;
     height: 75%;
+    max-width: 340px;
     margin: 0 auto;
     padding: 0.5% 0 0.5% 0;
     border: 0;
@@ -153,7 +154,7 @@ textarea {
   #pitch{
     z-index: 100;
     background-size: 100% 20vmin;
-    border:solid 3px #979797;
+    border:solid 3px #8B1F41;
     height:92.1%;
     position:absolute;
     left: 5%;
@@ -230,7 +231,7 @@ textarea {
   
   #datacontainer {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
     grid-column-gap: 5px;
     grid-row-gap: 0px;
