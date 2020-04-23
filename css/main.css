@@ -289,6 +289,11 @@ textarea {
     color: green;
     font-weight: 600;
   }
+
+  #selected2{
+    color: green;
+    font-weight: 600;
+  }
   
   .editable{
     background-color: gray;
