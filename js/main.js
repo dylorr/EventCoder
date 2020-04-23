@@ -27,10 +27,10 @@ function addevent(event) {
     
     let table = document.getElementById("resultsdata");
     let row = table.insertRow(-1);
-    let cell4 = row.insertCell(1);
-    #let cell1 = row.insertCell(1);
-    let cell2 = row.insertCell(2);
-    let cell3 = row.insertCell(3);
+   # let cell4 = row.insertCell(4);
+    let cell1 = row.insertCell(0);
+    let cell2 = row.insertCell(1);
+    let cell3 = row.insertCell(2);
     cell1.innerHTML = action;
     cell2.innerHTML = Math.round(x*50);
     cell3.innerHTML = Math.round(y*94);
@@ -45,8 +45,8 @@ function addevent(event) {
   }
   
   function changeEventFocus(event){
-    document.getElementById("selected2").removeAttribute('id');
-    event.setAttribute("id", "selected2");
+    document.getElementById("selected").removeAttribute('id');
+    event.setAttribute("id", "selected");
   }
   
   function eventsEditable(){
