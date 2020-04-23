@@ -154,12 +154,12 @@ textarea {
   #pitch{
     z-index: 100;
     background-size: 100% 20vmin;
-    border:solid 3px #8B1F41;
+    /* border:solid 3px #8B1F41; */
     height:92.1%;
     position:absolute;
-    left: 5%;
+    left: 6%;
     width:88%;
-    margin: 5% auto;
+    margin: 6% auto;
   }
   
   .top-box {
