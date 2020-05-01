@@ -287,12 +287,12 @@ textarea {
   }
   
   #selected{
-    color: green;
+    color: #E87722;
     font-weight: 600;
   }
 
   #selected2{
-    color: green;
+    color: #8B1F41;
     font-weight: 600;
   }
   
