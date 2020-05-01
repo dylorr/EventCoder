@@ -21,7 +21,7 @@ function addevent(event) {
     // let coords2 = "W = " + x + " Y = " + y;
     
     let action = document.getElementById('selected').innerHTML;
-   // let action2 = document.getElementById('selected2').innerHTML;
+    let action2 = document.getElementById('selected2').innerHTML;
     
     // document.getElementById("demo").innerHTML = coords2 //test
     
@@ -34,7 +34,7 @@ function addevent(event) {
     cell1.innerHTML = action;
     cell2.innerHTML = Math.round(x*50);
     cell3.innerHTML = Math.round(y*94);
-    cell4.innerHTML = action;  
+    cell4.innerHTML = action2;  
     
     document.getElementById("resultscontainer").scrollTop = document.getElementById("resultscontainer").scrollHeight; 
     
@@ -47,6 +47,11 @@ function addevent(event) {
   function changeEventFocus(event){
     document.getElementById("selected").removeAttribute('id');
     event.setAttribute("id", "selected");
+  }
+  
+  function changeEventFocus2(event){
+    document.getElementById("selected2").removeAttribute('id');
+    event.setAttribute("id", "selected2");
   }
   
   function eventsEditable(){
