@@ -241,7 +241,7 @@ textarea {
   }
   
   #resultscontainer { grid-area: 1 / 1 / 2 / 2; }
-  #eventscontainer { grid-area: 1 / 2 / 2 / 3;
+  #eventscontainer { grid-area: auto;
   
     overflow-y: unset;
   }
