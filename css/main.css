@@ -108,7 +108,7 @@ textarea {
   }
   
   #maincontainer{
-    width: 500px;
+    width: 700px;
     max-width:95%;
     height: 98%;
     max-height: 800px;
@@ -231,7 +231,7 @@ textarea {
   
   #datacontainer {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr;
     grid-column-gap: 5px;
     grid-row-gap: 0px;
@@ -269,7 +269,7 @@ textarea {
   #resultstable{
     max-height: 70%;
     margin: 0 auto;
-    width: 80%;
+    width: 100%;
   }
   
   #editON{
