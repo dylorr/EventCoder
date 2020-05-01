@@ -111,7 +111,7 @@ textarea {
     width: 700px;
     max-width:95%;
     height: 98%;
-    max-height: 800px;
+    max-height: 900px;
     background-color: #eee;
     margin: 0 auto;
     margin-top: 1%;
@@ -139,6 +139,7 @@ textarea {
     width: 85%;
     height: 75%;
     max-width: 340px;
+    max-height: 600px;
     margin: 0 auto;
     padding: 0.5% 0 0.5% 0;
     border: 0;
@@ -156,6 +157,7 @@ textarea {
     background-size: 100% 20vmin;
     /* border:solid 3px #8B1F41; */
     height:92.1%;
+    max-height: 600px;
     position:absolute;
     left: 6%;
     width:88%;
