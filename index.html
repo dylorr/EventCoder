@@ -72,26 +72,18 @@
       </div>
       <div id="eventscontainer">
         <p
-          class="event"
+          class="player"
           id="selected2"
           onclick="changeEventFocus2(this)"
           contenteditable="false"
         >
           Player1
         </p>
-        <p class="event" onclick="changeEventFocus2(this)" contenteditable="false">
+        <p class="player" onclick="changeEventFocus2(this)" contenteditable="false">
           Player2
         </p>
         <h4 onclick="eventsEditable()"><span id="editON">ON|</span>Edit<span id="editOFF">|OFF</span></h4>
 
-        <p id="buttonContainer">
-          <button id="export" onclick="exportTableToCSV('events.csv')">
-            Export CSV
-          </button>
-          <button id="delLast" onclick="delLast()">
-            Delete last
-          </button>
-        </p>
       </div>
     </div>
   </div>

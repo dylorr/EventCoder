@@ -57,6 +57,9 @@ function addevent(event) {
   function eventsEditable(){
     events = document.getElementsByClassName("event");
     
+  function playersEditable(){
+    players = document.getElementsByClassName("player");
+    
     
      if (events[0].getAttribute("contenteditable") == "false"){
        for (var i = 0; i < events.length; i++){
